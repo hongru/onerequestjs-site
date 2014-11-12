@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'onerequestjs-site' ]; then cd .. && eval "mv $currentfolder onerequestjs-site" && cd onerequestjs-site; fi
+
